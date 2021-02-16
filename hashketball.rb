@@ -199,6 +199,5 @@ def player_stats(input_player)
       give = player
     end
   end
-  
-
+  give
 end
