@@ -179,5 +179,10 @@ def player_numbers
       numbers.push(player[:number])
     end
   end
+  if game_hash[:away][:team_name] == team
+    game_hash[:away][:players].each do |player|
+      numbers.push(player[:number])
+    end
+  end
   numbers
 end
