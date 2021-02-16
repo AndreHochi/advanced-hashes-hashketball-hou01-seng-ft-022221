@@ -158,5 +158,6 @@ def shoe_size(input_player)
 end
 
 def team_colors(team)
+  colours = []
   game_hash[team][:colors]
 end
