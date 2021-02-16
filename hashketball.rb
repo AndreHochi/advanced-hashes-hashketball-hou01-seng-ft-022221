@@ -186,3 +186,7 @@ def player_numbers(team)
   end
   numbers
 end
+
+def player_stats(player)
+  if game_hash[:home][:players][player]
+end
