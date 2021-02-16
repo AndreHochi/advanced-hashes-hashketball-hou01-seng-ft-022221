@@ -201,3 +201,8 @@ def player_stats(input_player)
   end
   give
 end
+
+def big_shoe_rebounds(input_player)
+  give = []
+  game_hash[:home][:players].each do |player|
+    if player[]
