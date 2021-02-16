@@ -188,5 +188,11 @@ def player_numbers(team)
 end
 
 def player_stats(player)
+  give = []
   if game_hash[:home][:players][player]
+    give = game_hash[:home][:players][player]
+  end
+  if game_hash[:away][:players][player]
+    give = game_hash[:away][:players][player]
+  end
 end
