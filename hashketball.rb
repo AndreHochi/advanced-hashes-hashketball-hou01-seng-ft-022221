@@ -172,7 +172,7 @@ def team_names
   [game_hash[:home][:team_name],game_hash[:away][:team_name]]
 end
 
-def player_numbers
+def player_numbers(team)
   numbers = []
   if game_hash[:home][:team_name] == team
     game_hash[:home][:players].each do |player|
