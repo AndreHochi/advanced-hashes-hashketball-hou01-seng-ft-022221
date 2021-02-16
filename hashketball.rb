@@ -146,13 +146,17 @@ def shoe_size(input_player)
   score = 0
   game_hash[:home][:players].each do |player| 
     if input_player == player[:player_name]
-      score = player[:shoe_size]
+      score = player[:shoe]
     end
   end
   game_hash[:away][:players].each do |player| 
     if input_player == player[:player_name]
-      score = player[:shoe_size]
+      score = player[:shoe]
     end
   end
   score
+end
+
+def team_colors(team)
+  game_hash[team][:colors]
 end
