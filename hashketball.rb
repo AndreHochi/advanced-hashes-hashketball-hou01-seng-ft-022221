@@ -163,7 +163,11 @@ def team_colors(team)
     colours = game_hash[:home][:colors]
   end
   if game_hash[:away][:team_name] == team
-    colours = game_hash[:home][:colors]
+    colours = game_hash[:away][:colors]
   end
   colours
+end
+
+def team_names
+  [game_hash[:home][:team_name],game_hash[:away][:team_name]]
 end
