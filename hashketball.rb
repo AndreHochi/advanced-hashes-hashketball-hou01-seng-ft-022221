@@ -194,7 +194,7 @@ def player_stats(input_player)
       give = player
     end
   end
-    game_hash[:away][:players].each do |player|
+  game_hash[:away][:players].each do |player|
     if player[:player_name] == input_player
       give = player
     end
