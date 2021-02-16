@@ -187,12 +187,13 @@ def player_numbers(team)
   numbers
 end
 
-def player_stats(player)
+def player_stats(input_player)
   give = []
-  if game_hash[:home][:players][player]
-    give = game_hash[:home][:players][player]
+  game_hash[:home][:players].each do |player|
+    if player[:player_name] == input_player
+      give = player
+    end
   end
-  if game_hash[:away][:players][player]
-    give = game_hash[:away][:players][player]
-  end
+  
+
 end
